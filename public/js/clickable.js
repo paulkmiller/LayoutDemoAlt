@@ -4,7 +4,7 @@
       style: 'mapbox://styles/mapbox/streets-v9',
       center: [-98, 38.88],
       minZoom: 2,
-      zoom: 3
+      zoom: 4
   });
 
   // Disable default box zooming.
