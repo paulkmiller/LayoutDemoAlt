@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.css' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.3.0/mapbox-gl-geocoder.css' />
+</head>
+
+<body>
+
+    <div id='map' style="height: 100%; width:100%;"></div>
+    <a href="index.html" class="close-button"><i class="fa fa-close"></i></a>
+
+    <!-- END SECTION: Footer -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.3.0/mapbox-gl-geocoder.js'></script>
+    <script src="js/data.js"></script>
+
+    <script>
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        center: [-77.356746, 38.957575],
+        zoom: 13
+    });
+
+    map.addControl(new mapboxgl.Geocoder());
+    </script>
+</body>
+
+</html>
