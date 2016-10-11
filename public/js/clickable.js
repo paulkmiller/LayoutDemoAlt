@@ -53,8 +53,8 @@
           "source": "counties",
           "source-layer": "original",
           "paint": {
-              "fill-outline-color": "#484896",
-              "fill-color": "#6e599f",
+              "fill-outline-color": "#da7110",
+              "fill-color": "#22d5d0",
               "fill-opacity": 0.75
           },
           "filter": ["in", "FIPS", ""]

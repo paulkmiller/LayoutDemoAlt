@@ -1,3 +1,5 @@
-$(".trigger").click(function() {
-    $(".menu").toggleClass("active");
+$(function() {
+  $(".trigger").click(function() {
+      $(".menu").toggleClass("active");
+  });
 });
